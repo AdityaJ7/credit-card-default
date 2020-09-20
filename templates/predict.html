@@ -34,10 +34,10 @@ main{
   </header>
   <main>
     <h1>Here is the prediction for your credit card: </h1>    
-    {% if prediction %}
+    {% if prediction == "1" %}
         <h2>Your credit card will default next month.</h1>
         <img src="https://images.unsplash.com/photo-1599666505327-7758b44a9985?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="Frustrated">
-    {% else %}                   
+    {% elif prediction == "0" %}                   
         <h3>Your credit card will not default next month.</h1>
         <img src="https://images.unsplash.com/photo-1533227268428-f9ed0900fb3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1779&q=80" alt="Happy">
     {% endif %}   
